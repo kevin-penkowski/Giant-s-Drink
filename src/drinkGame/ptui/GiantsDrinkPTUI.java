@@ -6,7 +6,7 @@ import drinkGame.model.GiantsDrinkModel;
 
 public class GiantsDrinkPTUI implements Observer<GiantsDrinkModel, GiantsDrinkData> {
 
-    private char[][] map;
+    private CharacterMap[][] map;
 
     @Override
     public void update(GiantsDrinkModel model, GiantsDrinkData data) {
@@ -14,7 +14,10 @@ public class GiantsDrinkPTUI implements Observer<GiantsDrinkModel, GiantsDrinkDa
     }
 
     public void display(){
-        System.out.println();
+        System.out.println(map);
+        System.out.println("**GIANT** \"Well, Rat, which will it be?\"");
+        System.out.println(left.getMsg);
+        System.out.println(right.getMsg);
     }
 }
 
