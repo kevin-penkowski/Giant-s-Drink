@@ -1,0 +1,2 @@
+module Giant.s.Drink {
+}
